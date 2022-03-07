@@ -169,7 +169,9 @@ function setup() {
   }
   current=grid[0];
 }
-
+function windowResized() {
+  resizeCanvas(col_length, row_length);
+}
 function draw() {      // background grid
   background(100);
   for(var i=0;i<grid.length;i++){
